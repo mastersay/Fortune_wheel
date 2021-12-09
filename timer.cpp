@@ -21,5 +21,5 @@ void Timer::stop() {
     auto us = end - start;
     double ms = (double) us * 0.001;
     double s = ms * 0.001;
-    std::cout << ms << " (" << s << ")" << std::endl;
+    std::cout << ms << "ms (" << s << "s)" << std::endl;
 }
