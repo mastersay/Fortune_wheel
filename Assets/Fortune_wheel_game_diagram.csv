@@ -1,0 +1,63 @@
+Id,Name,Shape Library,Page ID,Contained By,Group,Line Source,Line Destination,Source Arrow,Destination Arrow,Status,Text Area 1
+1,Document,,,,,,,,,,Fortune_wheel_game_diagram
+2,Page,,,,,,,,,,Page 1
+3,Actor,UML,2,,,,,,,,User input
+4,Decision,Flowchart Shapes,2,,,,,,,,Amount
+5,Display,Flowchart Shapes,2,,,,,,,,Show new topic and chart
+6,Database,Flowchart Shapes,2,,,,,,,,Basic questions
+7,Process,Flowchart Shapes,2,,,,,,,,Spinning
+8,Process,Flowchart Shapes,2,,,,,,,,Spin result
+9,Predefined Process,Flowchart Shapes,2,,,,,,,,Stop
+10,Predefined Process,Flowchart Shapes,2,,,,,,,,Bankrupt (lose all money)
+11,Predefined Process,Flowchart Shapes,2,,,,,,,,Add money to player for same consonants in chart and show their place  
+12,Actor,UML,2,,,,,,,,Consonant pick
+13,Actor,UML,2,,,,,,,,Chart guesing
+14,Predefined Process,Flowchart Shapes,2,,,,,,,,Saving gathered money
+15,Actor,UML,2,,,,,,,,Buying vowel
+16,Decision,Flowchart Shapes,2,,,,,,,,3rd round
+17,Display,Flowchart Shapes,2,,,,,,,,Show new topic and chart
+18,Database,Flowchart Shapes,2,,,,,,,,Big chart
+19,Actor,UML,2,,,,,,,,Player 1
+20,Actor,UML,2,,,,,,,,Players x
+21,Process,Flowchart Shapes,2,,,,,,,,Everyone picks 2 consonants
+22,Connector,Flowchart Shapes,2,,,,,,,,Guessing together
+23,Predefined Process,Flowchart Shapes,2,,,,,,,,Time limit
+24,Process,Flowchart Shapes,2,,,,,,,,"Player with most money gets bonus round, others leaving with bonus money or nothing"
+25,Process,Flowchart Shapes,2,,,,,,,,"Bonus round (At start 3 consonants, 1 vowel to pick)"
+26,Line,,2,,,3,4,None,None,,Amount of players
+27,Line,,2,,,4,3,None,Arrow,,Too many
+28,Line,,2,,,4,5,None,Arrow,,Yes
+29,Line,,2,,,6,5,None,Arrow,,
+30,Line,,2,,,5,7,None,Arrow,,Player
+31,Line,,2,,,7,8,None,Arrow,,
+32,Line,,2,,,8,10,None,Arrow,,
+33,Line,,2,,,8,9,None,Arrow,,
+34,Line,,2,,,9,7,None,Arrow,,Next player
+35,Line,,2,,,10,7,None,Arrow,,Next player
+36,Line,,2,,,,,None,Arrow,,Not in chart
+37,Line,,2,,,12,,None,None,,
+38,Line,,2,,,11,13,None,Arrow,,
+39,Line,,2,,,13,,None,Arrow,,Incorrectly
+40,Line,,2,,,13,13,None,None,,
+41,Line,,2,,,13,13,None,None,,
+42,Line,,2,,,13,14,None,Arrow,,Correctly
+43,Line,,2,,,8,12,None,Arrow,,
+44,Line,,2,,,8,12,None,Arrow,,Joker for free vowel pick (until end of round)
+45,Line,,2,,,12,,None,None,,
+46,Line,,2,,,,11,None,Arrow,,In chart
+47,Line,,2,,,12,15,None,None,,
+48,Line,,2,,,15,,None,Arrow,,Yes
+49,Line,,2,,,15,13,None,Arrow,,No
+50,Line,,2,,,15,15,None,None,,
+51,Line,,2,,,14,16,None,Arrow,,
+52,Line,,2,,,16,17,None,Arrow,,Yes
+53,Line,,2,,,16,5,None,Arrow,,No
+54,Line,,2,,,18,17,None,Arrow,,
+55,Line,,2,,,20,22,None,None,,
+56,Line,,2,,,19,22,None,None,,
+57,Line,,2,,,22,21,None,Arrow,,
+58,Line,,2,,,17,21,None,Arrow,,
+59,Line,,2,,,21,23,None,Arrow,,
+60,Line,,2,,,23,24,None,Arrow,,Time out
+61,Line,,2,,,23,24,None,Arrow,,Bonus money for everyone
+62,Line,,2,,,24,25,None,Arrow,,
