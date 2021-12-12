@@ -48,7 +48,7 @@ void how_many_rounds_animation(){
         std::cout << std::endl;
     std::cout << "    ________" << std::endl;
     std::cout << "   /________\\   I-----------------------------------------------I" << std::endl;
-    std::cout << "   I  O  O  I   I Ok, and how many rounds are we going to play? I" << std::endl;
+    std::cout << "   I  O  O  I   I Ok, and how many rounds are we going to play( - )? I" << std::endl;
     std:: cout << "   I   <>   I   V-----------------------------------------------I" <<  std::endl;
     std::cout << "   \\________/  " << std::endl;
     std::cout << "   ----II----  " << std::endl;

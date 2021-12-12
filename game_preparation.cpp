@@ -23,9 +23,9 @@ void wrong_number_animation(){
     for(int i=0;i<20;i++)
         std::cout << std::endl;
     std::cout << "    ________" << std::endl;
-    std::cout << "   /________\\   I--------------------------I" << std::endl;
-    std::cout << "   I  O  O  I   I Wrong number! Try again. I" << std::endl;
-    std::cout << "   I   <>   I   V--------------------------I" <<  std::endl;
+    std::cout << "   /________\\   I---------------------------------I" << std::endl;
+    std::cout << "   I  O  O  I   I Wrong number! Please try again. I" << std::endl;
+    std::cout << "   I   <>   I   V---------------------------------I" <<  std::endl;
     std::cout << "   \\________/  " << std::endl;
     std::cout << "   ----II----  " << std::endl;
     std::cout << "       II     " << std::endl;
