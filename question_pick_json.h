@@ -5,8 +5,9 @@
 #ifndef MAIN_CPP_QUESTION_PICK_JSON_H
 #define MAIN_CPP_QUESTION_PICK_JSON_H
 
+#include <vector>
+#include <string>
 
-void pick();
-
+std::vector<std::string> pick_questions(const std::string &type);
 
 #endif //MAIN_CPP_QUESTION_PICK_JSON_H
