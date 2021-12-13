@@ -4,34 +4,7 @@
 
 #include "game_preparation.h"
 #include <iostream>
-
-void how_many_players_animation(){
-    for(int i=0;i<20;i++)
-        std::cout << std::endl;
-    std::cout << "    ________" << std::endl;
-    std::cout << "   /________\\   I------------------------------------------------I" << std::endl;
-    std::cout << "   I  O  O  I   I How many players would you like to have (2-6)? I" << std::endl;
-    std::cout << "   I   <>   I   V------------------------------------------------I" <<  std::endl;
-    std::cout << "   \\________/  " << std::endl;
-    std::cout << "   ----II----  " << std::endl;
-    std::cout << "       II     " << std::endl;
-    std::cout << "       /\\      " << std::endl;
-    std::cout << "      /  \\     " << std::endl;
-}
-
-void wrong_number_animation(){
-    for(int i=0;i<20;i++)
-        std::cout << std::endl;
-    std::cout << "    ________" << std::endl;
-    std::cout << "   /________\\   I---------------------------------I" << std::endl;
-    std::cout << "   I  O  O  I   I Wrong number! Please try again. I" << std::endl;
-    std::cout << "   I   <>   I   V---------------------------------I" <<  std::endl;
-    std::cout << "   \\________/  " << std::endl;
-    std::cout << "   ----II----  " << std::endl;
-    std::cout << "       II     " << std::endl;
-    std::cout << "       /\\      " << std::endl;
-    std::cout << "      /  \\     " << std::endl;
-}
+#include "Animations.h"
 
 unsigned char get_players_amount() {
     how_many_players_animation();
