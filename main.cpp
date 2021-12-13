@@ -1,6 +1,7 @@
 #include <iostream>
 #include "timer.h"
 #include "game_preparation.h"
+#include "question_pick_json.h"
 #include "Windows.h"
 
 void welcome_animation(){
@@ -59,8 +60,9 @@ void how_many_rounds_animation(){
 
 
 int main() {
-    welcome_animation();
-    game_preparation();
+//    welcome_animation();
+//    game_preparation();
+    pick();
     std::system("pause");
     return 0;
 }
