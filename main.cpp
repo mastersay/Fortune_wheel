@@ -8,9 +8,10 @@
 int main() {
 //    welcome_animation();
 //    game_preparation();
-//    std::vector<std::string> question = pick_questions("basic_questions");
+    std::vector<std::string> question = pick_questions(
+            "basic_questions"); // returns vector with hint(first element) for table(second element)
 //    std::vector<std::string> question = pick_questions("advanced_questions");
-//    std::cout<<question[0]<<question[1];
+    std::cout << question[0] << question[1];
     std::system("pause");
     return 0;
 }

@@ -10,7 +10,7 @@
 #include "random.h"
 
 std::vector<std::string> pick_questions(const std::string &type) {
-    std::ifstream ifs("..\\" + type + ".json");
+    std::ifstream ifs("Questions//" + type + ".json");
     rapidjson::IStreamWrapper isw(ifs);
     rapidjson::Document d;
     d.ParseStream(isw);
