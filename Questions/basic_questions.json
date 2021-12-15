@@ -1,1 +1,4 @@
-{"hint1": "table1",  "hint2": "table2"}
+{
+  "hint1": "table1 word2 table1",
+  "hint2": "table2 word2 table2"
+}

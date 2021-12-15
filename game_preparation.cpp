@@ -5,6 +5,17 @@
 #include "game_preparation.h"
 #include <iostream>
 #include "Animations.h"
+#include <vector>
+
+class Player {
+public:
+    unsigned char player_number;
+    int saved_money = 0, round_money = 0;
+
+    explicit Player(unsigned char number_of_player) {
+        player_number = number_of_player;
+    }
+};
 
 unsigned char get_players_amount() {
     how_many_players_animation();
@@ -17,5 +28,9 @@ unsigned char get_players_amount() {
 }
 
 void game_preparation() {
-    std::cout << get_players_amount();
+    std::vector<Player> players;
+    unsigned char player_amount = get_players_amount() + 1;
+    for (unsigned char i = 49; i != player_amount; i++)
+        players.emplace_back(Player(i));
+
 }

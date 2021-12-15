@@ -1,7 +1,7 @@
 //
 // Created by japru on 13/12/2021.
 //
-#include "question_pick_json.h"
+#include "pick_from_json.h"
 #include <fstream>
 #include <vector>
 #include <string>
@@ -9,8 +9,8 @@
 #include "rapidjson/istreamwrapper.h"
 #include "random.h"
 
-std::vector<std::string> pick_questions(const std::string &type) {
-    std::ifstream ifs("Questions//" + type + ".json");
+std::vector<std::string> pick_questions(const std::string &json_file) {
+    std::ifstream ifs("Questions//" + json_file + ".json");
     rapidjson::IStreamWrapper isw(ifs);
     rapidjson::Document d;
     d.ParseStream(isw);

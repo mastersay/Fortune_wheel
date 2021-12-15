@@ -2,16 +2,13 @@
 #include "timer.h"
 #include "game_preparation.h"
 #include "Animations.h"
-#include "question_pick_json.h"
-#include <vector>
+#include "show_question.h"
 
 int main() {
 //    welcome_animation();
-//    game_preparation();
-    std::vector<std::string> question = pick_questions(
-            "basic_questions"); // returns vector with hint(first element) for table(second element)
-//    std::vector<std::string> question = pick_questions("advanced_questions");
-    std::cout << question[0] << question[1];
+    game_preparation();
+    show_basic_question();
+    show_advanced_question();
     std::system("pause");
     return 0;
 }

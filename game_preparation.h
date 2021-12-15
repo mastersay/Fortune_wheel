@@ -6,6 +6,6 @@
 #define FORTUNE_WHEEL_GAME_PREPARATION_H
 
 void game_preparation();
-
+class Player;
 
 #endif //FORTUNE_WHEEL_GAME_PREPARATION_H
