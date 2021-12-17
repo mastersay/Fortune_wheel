@@ -12,10 +12,6 @@ void how_many_players_animation();
 void how_many_rounds_animation();
 
 void wrong_number_animation();
-void wheel_frame_1();
-void wheel_frame_2();
-void random_wheel_frame();
-void wheel_spin_animation();
 
 
 void wheel_spin_animation();
