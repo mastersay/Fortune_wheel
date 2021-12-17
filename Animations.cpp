@@ -5,7 +5,6 @@
 #include <iostream>
 #include "Windows.h"
 #include "Animations.h"
-//#include <ctime>
 #include "random.h"
 
 void welcome_animation() {
