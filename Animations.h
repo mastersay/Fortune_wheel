@@ -13,6 +13,6 @@ void wheel_frame_1();
 void wheel_frame_2();
 void random_wheel_frame();
 void wheel_spin_animation();
-void wheel_animation();
+
 
 #endif //FORTUNE_WHEEL_ANIMATIONS_H
