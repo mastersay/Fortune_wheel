@@ -7,8 +7,9 @@
 int main() {
     welcome_animation();
     game_preparation();
+//    wheel_spin_animation();
     show_basic_question();
-    //show_advanced_question();
+//    show_advanced_question();
     std::system("pause");
     return 0;
 }
