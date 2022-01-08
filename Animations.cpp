@@ -89,6 +89,33 @@ void how_many_rounds_animation() {
     std::cout << "      /  \\     " << std::endl;
 }
 
+void user_letter() {
+    for (int i = 0; i < 20; i++)
+        std::cout << std::endl;
+    std::cout << "    ________" << std::endl;
+    std::cout << "   /________\\   I-------------------------I" << std::endl;
+    std::cout << "   I  O  O  I   I So your letter is: " << "A" << "    I" << std::endl;
+    std::cout << "   I   <>   I   V-------------------------I" << std::endl;
+    std::cout << "   \\________/  " << std::endl;
+    std::cout << "   ----II----  " << std::endl;
+    std::cout << "       II     " << std::endl;
+    std::cout << "       /\\      " << std::endl;
+    std::cout << "      /  \\     " << std::endl;
+}
+
+void is_in_table() {
+    for (int i = 0; i < 20; i++)
+        std::cout << std::endl;
+    std::cout << "    ________" << std::endl;
+    std::cout << "   /________\\   I--------------------I" << std::endl;
+    std::cout << "   I  O  O  I   I Is " << "A" << " in the table? I" << std::endl;
+    std::cout << "   I   <>   I   V--------------------I" << std::endl;
+    std::cout << "   \\________/  " << std::endl;
+    std::cout << "   ----II----  " << std::endl;
+    std::cout << "       II     " << std::endl;
+    std::cout << "       /\\      " << std::endl;
+    std::cout << "      /  \\     " << std::endl;
+}
 
 void wheel_frame_1() {
     std::cout << "                                                                                                "

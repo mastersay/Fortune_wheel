@@ -5,9 +5,9 @@
 #include <vector>
 #include <string>
 #include "pick_from_json.h"
+#include "show_question.h"
 
-void answer_basic_question() {
-    std::vector<std::string> question;
+void answer_basic_question(std::vector<std::string> question) {
     char letters[20];
     char letter_answer;
     int a = 0;

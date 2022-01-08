@@ -7,6 +7,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "Answer_questions.h"
 
 //func for multiplying strings
 //std::string operator*(const std::string &s, size_t n) {
@@ -31,6 +32,7 @@ void show_basic_question() {
         else { std::cout << "  "; }
     }
     std::cout << std::endl;
+    answer_basic_question(question);
 }
 
 void show_advanced_question() {

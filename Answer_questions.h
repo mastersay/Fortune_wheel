@@ -5,6 +5,8 @@
 #ifndef FORTUNE_WHEEL_ANSWER_QUESTIONS_H
 #define FORTUNE_WHEEL_ANSWER_QUESTIONS_H
 
-void answer_basic_question();
+#include <vector>
+
+void answer_basic_question(std::vector<std::string> vector);
 
 #endif //FORTUNE_WHEEL_ANSWER_QUESTIONS_H
