@@ -1,4 +1,15 @@
 {
-  "ahint1": "atable1",
-  "ahint2": "atable2"
+  "Operator": "addition",
+  "Operator": "subtraction",
+  "Operator": "multiplication",
+  "Operator": "division",
+  "Operator": "modulo ",
+  "Variable": "int",
+  "Variable": "char",
+  "Variable": "string",
+  "Variable": "double",
+  "Variable": "bool",
+  "C++ Files": "ofstream",
+  "C++ Files": "ifstream",
+  "C++ Files": "fstream"
 }
