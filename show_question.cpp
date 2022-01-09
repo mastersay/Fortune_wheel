@@ -48,5 +48,5 @@ void show_advanced_question() {
         else { std::cout << "  "; }
     }
     std::cout << std::endl;
-
+    answer_advanced_question(question);
 }
