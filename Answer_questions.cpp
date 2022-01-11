@@ -48,6 +48,8 @@ void answer_basic_question(std::vector<std::string> question) {
             if (nic == 2){
                 std::cout << std::endl;
                 std::cout << "Congrats! You guessed the word correctly!" << std::endl;
+                //int total_money = total_money + random_spin_num;
+                //cout << "Now you have " << total_money << "€";
             }
 
         }

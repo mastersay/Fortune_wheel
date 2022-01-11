@@ -7,7 +7,7 @@
 #include <string>
 #include <vector>
 int main() {
-//    welcome_animation();
+    welcome_animation();
     //game_preparation();
     //wheel_spin_animation();
   //  show_basic_question();
