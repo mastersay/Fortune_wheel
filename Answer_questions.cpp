@@ -4,8 +4,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "pick_from_json.h"
-#include "show_question.h"
 #include "wheel_spin.h"
 #include "Animations.h"
 
@@ -24,7 +22,7 @@ void answer_basic_question(std::vector<std::string> question, int total_money, i
             a++;
             int nic = 2;
             for (char letter: question[1]) {
-                int a = 1;
+                a = 1;
                 if(letter == letter_answer)
                     c = 1;
                 for(int i = 0;i < 21;i++){
@@ -75,7 +73,7 @@ void answer_advanced_question(std::vector<std::string> question) {
         a++;
         int nic = 2;
         for (char letter: question[1]) {
-            int a = 1;
+            a = 1;
             if(letter == letter_answer)
                 c = 1;
             for(int i = 0;i < 21;i++){
