@@ -19,7 +19,7 @@
 //    return result;
 //}
 
-void show_basic_question() {
+std::vector<std::string> show_basic_question() {
     std::vector<std::string> question = pick_questions(
             "basic_questions"); // returns vector with hint(first element) for table(second element)
     std::cout << "********************************" << std::endl;
@@ -32,12 +32,12 @@ void show_basic_question() {
         else { std::cout << "  "; }
     }
     std::cout << std::endl;
-    answer_basic_question(question);
+    return question;
 }
 
-void show_advanced_question() {
+std::vector<std::string> show_advanced_question() {
     std::vector<std::string> question = pick_questions(
-            "advanced_questions"); // returns vector with hint(first element) for table(second element)
+            "advanced_questions"); // returns vector with hint(second element) for table(second element)
     std::cout << "********************************" << std::endl;
     std::cout << "Advanced question topic is: " << question[0] << std::endl;
     std::cout << "********************************" << std::endl;
@@ -48,5 +48,5 @@ void show_advanced_question() {
         else { std::cout << "  "; }
     }
     std::cout << std::endl;
-    answer_advanced_question(question);
+    return question;
 }
