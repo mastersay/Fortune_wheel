@@ -6,8 +6,10 @@
 #include <string>
 #include "pick_from_json.h"
 #include "show_question.h"
+#include "wheel_spin.h"
+#include "Animations.h"
 
-void answer_basic_question(std::vector<std::string> question) {
+void answer_basic_question(std::vector<std::string> question, int total_money, int random_spin_num, bool roundover) {
         int a = 0;
         int b = 0;
         while(b == 0) {
@@ -29,6 +31,11 @@ void answer_basic_question(std::vector<std::string> question) {
                     if(letter == letters[i]){
                         std::cout << letters[i] << " ";
                         a = 2;
+                        total_money = total_money + random_spin_num;
+                        std::cout << "Correct letter! Current credit: " << total_money;
+                        wheel_spin_animation();
+                        spin(random_spin_num);
+                        wheel(random_spin_num, total_money, roundover);
                     }
                     else
                         continue;
@@ -48,8 +55,6 @@ void answer_basic_question(std::vector<std::string> question) {
             if (nic == 2){
                 std::cout << std::endl;
                 std::cout << "Congrats! You guessed the word correctly!" << std::endl;
-                //int total_money = total_money + random_spin_num;
-                //cout << "Now you have " << total_money << "€";
             }
 
         }
