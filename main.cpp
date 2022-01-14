@@ -11,7 +11,7 @@
 #include "random.h"
 
 int main() {
-//    welcome_animation(); // DONE
+    welcome_animation(); // DONE
     std::vector<Player> players = game_preparation(); // DONE
     unsigned char rolling_player = 49, round = 49;
     auto game_status = [&rolling_player, &round, &players] {
@@ -54,8 +54,8 @@ int main() {
                 rolling_player += answer_bool;
                 if (answer_bool == 0) {
                     if (correctly_guessed != question[1]) {
-                        std::cout << "player " << rolling_player << "is getting " << money
-                                  << " for letter within the table"
+                        std::cout << "player " << rolling_player << " is getting " << money
+                                  << " for letter/s within the table"
                                   << std::endl;
                     }
                     players[rolling_player - 49].round_money += money;
@@ -67,6 +67,18 @@ int main() {
         round++;
     }
 
+    struct less_than_key {
+        inline bool operator()(const Player &struct1, const Player &struct2) {
+            return (struct1.round_money < struct2.round_money);
+        }
+    };
+    std::sort(players.begin(), players.end(), less_than_key());
+    std::cout << "Player order:" << std::endl;
+    for (auto p: players) {
+        std::cout << "Player number: " << p.player_number << " with " << p.round_money << std::endl;
+    }
+
+//    std::cout << "Winner is" << std::max() << std::endl;
     std::system("pause");
     return 0;
 }

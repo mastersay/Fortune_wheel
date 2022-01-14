@@ -45,6 +45,10 @@ answer_question(std::vector<Player> *players, unsigned char rolling_player, cons
     if (letter == question[1]) {
         return 0;
     }
+    if ((*correctly_guessed).find(letter[0]) != std::string::npos) {
+        std::cout << letter[0] << " <- already in table, next player\n";
+        return 1;
+    }
     if (vowels.find((char) toupper(letter[0])) != std::string::npos) {
         if ((*players)[rolling_player - 49].round_money >= 6) {
             std::cout << "You bought vowel for 6, your current money is "
@@ -59,8 +63,11 @@ answer_question(std::vector<Player> *players, unsigned char rolling_player, cons
         } else {
             std::cout << "You don't have enough money, pick consonant or solve the table: ";
             letter.clear();
-            while (std::getline(std::cin, letter) && (letter.size() != question[1].size()) || (letter.size() != 1) ||
-                   (consonants.find((char) toupper(letter[0])) == std::string::npos)) {
+            while (std::getline(std::cin, letter) && (letter.size() != question[1].size()) && ((letter.size() != 1) ||
+                                                                                               (consonants.find(
+                                                                                                       (char) toupper(
+                                                                                                               letter[0])) ==
+                                                                                                std::string::npos))) {
                 if (letter == question[1]) {
                     return 0;
                 }
