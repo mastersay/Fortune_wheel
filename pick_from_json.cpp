@@ -20,8 +20,8 @@ std::vector<std::string> pick_questions(const std::string &json_file) {
     std::vector<std::string> question_info;
     for (auto i = d.MemberBegin(); i != d.MemberEnd(); ++i, iterator++) {
         if (iterator == question_number) {
-            question_info.emplace_back(i->name.GetString());
             question_info.emplace_back(i->value.GetString());
+            question_info.emplace_back(i->name.GetString());
             return question_info;
         }
     }

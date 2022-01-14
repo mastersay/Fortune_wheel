@@ -8,6 +8,8 @@
 #include <vector>
 #include "game_preparation.h"
 
+void show_question_with_letter(std::string correctly_guessed, std::vector<std::string> question);
+
 int
 answer_question(std::vector<Player> *players, unsigned char rolling_player, const std::vector<std::string> &question,
                 std::string *correctly_guessed);

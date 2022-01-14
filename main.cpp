@@ -40,8 +40,11 @@ int main() {
             std::cin.ignore();
             std::getline(std::cin, roll);
             roll.clear();
-//        wheel_spin_animation();
+            wheel_spin_animation();
+            show_question_with_letter(correctly_guessed, question);
+            game_status();
             unsigned int money = randint(0, 25);
+            std::cout << "You rolled " << money << std::endl;
             if (money == 0) {
                 players[rolling_player - 49].round_money = 0;
                 std::cout << "You bankrupt\n";
@@ -50,17 +53,20 @@ int main() {
                 int answer_bool = answer_question(&players, rolling_player, question, &correctly_guessed);
                 rolling_player += answer_bool;
                 if (answer_bool == 0) {
+                    if (correctly_guessed != question[1]) {
+                        std::cout << "player " << rolling_player << "is getting " << money
+                                  << " for letter within the table"
+                                  << std::endl;
+                    }
                     players[rolling_player - 49].round_money += money;
                 }
             }
         }
+        std::cout << "player " << rolling_player << " is getting 50 for solving the table" << std::endl;
+        players[rolling_player - 49].round_money += 50;
         round++;
     }
 
-//    spin(random_spin_num);
-//    wheel(randint(0, 22), 1, roundover);
-    //  show_advanced_question();
-//    show_basic_question();
     std::system("pause");
     return 0;
 }
